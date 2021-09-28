@@ -21,11 +21,11 @@ class CycleGAN():
         # Input shape
         self.img_rows = 256
         self.img_cols = 256
-        self.channels = 3
+        self.channels = 12
         self.img_shape = (self.img_rows, self.img_cols, self.channels)
 
         # Configure data loader
-        self.dataset_name = 'a2o'
+        self.dataset_name = 'Paris' #name od dataset that folder includes 4 subfolders (trainA, trainB, testA, testB)
         self.data_loader = DataLoader(dataset_name=self.dataset_name,
                                       img_res=(self.img_rows, self.img_cols))
 
@@ -314,6 +314,3 @@ class CycleGAN():
 if __name__ == '__main__':
     gan = CycleGAN()
     gan.train(epochs=200, batch_size=1, sample_interval=50)
-
-
-# d_AB = gan.build_discriminator()
