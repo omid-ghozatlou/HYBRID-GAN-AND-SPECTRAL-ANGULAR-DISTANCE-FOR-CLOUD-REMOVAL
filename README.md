@@ -1,0 +1,2 @@
+# HYBRID-GAN-AND-SPECTRAL-ANGULAR-DISTANCE-FOR-CLOUD-REMOVAL
+This is the code for paper "Hybrid GAN and Spectral Angular Distances for cloud removal" by Omid Ghozatlou and Mihai Datcu, that aims to apply state of the art of gEnerative Adversarial Networks to shadow and could removal from Sentinel-2 multispectral images.The code builds on and extends the Cycle-GAN implementation based on Keras. In order to find repository of different kind of GAN on Keras click this link: https://github.com/eriklindernoren/Keras-GAN 
