@@ -12,21 +12,12 @@ while hasdata(ds)
 %     images(i,:,:,:) = read(ds);
 %     end
     % read image from datastore
-%     images(i) = img;
-%     i=i+1;
+    images(i) = img;
+    i=i+1;
 %     figure, imshow(img);    % creates a new window for each image
 end
 images = double(images);
-img=zeros(40,800,800,3);
-for  i=1:40
-    img = imread(char(ds.Files(i)));
-end
 % %--------------------------------------------
-% images = load('imgs.mat');
-% images = double(images.images);
-% B8A=zeros(); B1=zeros();B2=zeros(); B3=zeros();B11=zeros(); B12=zeros();
-% B4=zeros(); B5=zeros();B6=zeros(); B7=zeros();B8=zeros(); B9=zeros();
-
 % % % 
 n = 1312;
 B1 = images(1:n,:,:);
@@ -41,35 +32,7 @@ B7 = images(n*8+1:n*9,:,:);
 B8 = images(n*9+1:n*10,:,:);
 B8A = images(n*10+1:n*11,:,:);
 B9 = images(n*11+1:n*12,:,:);
-% n = 29;m=0;
-% B1 = images(1:n,:,:);
-% B11 = images(n+1:n+m,:,:);
-% B12 = images(n*2+1:n*2+m,:,:);
-% B2 = images(n*3+1:n*3+m,:,:);
-% B3 = images(n*4+1:n*4+m,:,:);
-% B4 = images(n*5+1:n*5+m,:,:);
-% B5 = images(n*6+1:n*6+m,:,:);
-% B6 = images(n*7+1:n*7+m,:,:);
-% B7 = images(n*8+1:n*8+m,:,:);
-% B8 = images(n*9+1:n*9+m,:,:);
-% B8A = images(n*10+1:n*10+m,:,:);
-% B9 = images(n*11+1:n*11+m,:,:);
-%   
-% for i=1:n
-%     B1(i,:,:) = (B1(i,:,:) - min(min(B1(i,:,:)))) / (max(max(B1(i,:,:)))- min(min(B1(i,:,:))));
-%     B2(i,:,:) = (B2(i,:,:) - min(min(B2(i,:,:)))) / (max(max(B2(i,:,:)))- min(min(B2(i,:,:))));
-%     B3(i,:,:) = (B3(i,:,:) - min(min(B3(i,:,:)))) / (max(max(B3(i,:,:)))- min(min(B3(i,:,:))));
-%     B4(i,:,:) = (B4(i,:,:) - min(min(B4(i,:,:)))) / (max(max(B4(i,:,:)))- min(min(B4(i,:,:))));
-%     B5(i,:,:) = (B5(i,:,:) - min(min(B5(i,:,:)))) / (max(max(B5(i,:,:)))- min(min(B5(i,:,:))));
-%     B6(i,:,:) = (B6(i,:,:) - min(min(B6(i,:,:)))) / (max(max(B6(i,:,:)))- min(min(B6(i,:,:))));
-%     B7(i,:,:) = (B7(i,:,:) - min(min(B7(i,:,:)))) / (max(max(B7(i,:,:)))- min(min(B7(i,:,:))));
-%     B8(i,:,:) = (B8(i,:,:) - min(min(B8(i,:,:)))) / (max(max(B8(i,:,:)))- min(min(B8(i,:,:))));
-%     B8A(i,:,:) = (B8A(i,:,:) - min(min(B8A(i,:,:)))) / (max(max(B8A(i,:,:)))- min(min(B8A(i,:,:))));
-%     B9(i,:,:) = (B9(i,:,:) - min(min(B9(i,:,:)))) / (max(max(B9(i,:,:)))- min(min(B9(i,:,:))));
-%     B11(i,:,:) = (B11(i,:,:) - min(min(B11(i,:,:)))) / (max(max(B11(i,:,:)))- min(min(B11(i,:,:))));
-%     B12(i,:,:) = (B12(i,:,:) - min(min(B12(i,:,:)))) / (max(max(B12(i,:,:)))- min(min(B12(i,:,:))));
-% end
-% 
+
 %  
 ro = sqrt(B4.^2 + B2.^2+ B3.^2 + B5.^2 + B6.^2+ B7.^2 + B8.^2 + B8A.^2+ B9.^2 + B11.^2 + B12.^2+ B1.^2);
 ro_int16 = uint16(ro);
