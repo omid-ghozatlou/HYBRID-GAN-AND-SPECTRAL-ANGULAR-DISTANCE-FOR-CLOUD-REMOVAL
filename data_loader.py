@@ -76,10 +76,6 @@ class DataLoader():
     def imread(self, path):
         img = tifffile.imread(path)
         img = img/(np.pi/2) # tetas normalization
-        # img = img/8000 # subset normalization
-        # b = np.where((img > 1))
-        # img[b[0],b[1],b[2]]=1  
-        # img = img*255
-        # img = ((img -img.min())/(img.max() - img.min()))*255  #patch-based normalization
+        # img = img/8000 # subset normalization (divide by maximum of subset)
         return img
     
