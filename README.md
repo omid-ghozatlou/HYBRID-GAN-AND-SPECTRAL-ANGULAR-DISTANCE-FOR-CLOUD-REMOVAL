@@ -3,3 +3,4 @@ This is the code for paper "Hybrid GAN and Spectral Angular Distances for cloud 
 In order to use this script for your dataset it is necessary to stack the multispectral bands. So in this case Stacked12Bands.py is applied on your dataset includes the patches with all bands. After that cyclegan_cloud.py train the GANs using data_loader.py to reach the dataset.
 There are script in MATLAB and Python for Polar coordinate transformation and save images as tetas so again needsto stack them by running stacked_tetas.py.
 After training we can test the model using Predict.py on test dataset.
+According to original scripts the dataset folder has to consist includes 4 subfolders (trainA, trainB, testA, testB)
