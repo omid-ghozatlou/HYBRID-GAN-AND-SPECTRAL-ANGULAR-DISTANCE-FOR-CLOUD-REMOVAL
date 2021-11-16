@@ -21,7 +21,7 @@ class CycleGAN():
         # Input shape
         self.img_rows = 256
         self.img_cols = 256
-        self.channels = 12
+        self.channels = 12 #number of channels
         self.img_shape = (self.img_rows, self.img_cols, self.channels)
 
         # Configure data loader
