@@ -17,7 +17,7 @@ To set up the project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/HYBRID-GAN-AND-SPECTRAL-ANGULAR-DISTANCE-FOR-CLOUD-REMOVAL.git
+   git clone https://github.com/omid-ghozatlou/HYBRID-GAN-AND-SPECTRAL-ANGULAR-DISTANCE-FOR-CLOUD-REMOVAL.git
    cd HYBRID-GAN-AND-SPECTRAL-ANGULAR-DISTANCE-FOR-CLOUD-REMOVAL
    ```
 
@@ -37,6 +37,23 @@ python main.py --input <input_image_path> --output <output_image_path>
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## Citation
+
+If you use this code in your research, please cite our paper:
+
+```bibtex
+@INPROCEEDINGS{9554891,
+  author={Ghozatlou, Omid and Datcu, Mihai},
+  booktitle={2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS}, 
+  title={Hybrid Gan and Spectral Angular Distance for Cloud Removal}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={2695-2698},
+  keywords={Deep learning;Training;Satellites;Image recognition;Clouds;Lighting;Geoscience and remote sensing;Cloud Removal;Generative Adversarial Networks (GANs);Polar Coordinates;Multispectral Satellite Images},
+  doi={10.1109/IGARSS47720.2021.9554891}}
+```
 
 ## License
 
