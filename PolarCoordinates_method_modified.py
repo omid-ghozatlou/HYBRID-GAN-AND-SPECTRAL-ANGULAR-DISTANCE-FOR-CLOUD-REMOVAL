@@ -2,6 +2,19 @@ import tensorflow as tf
 import math
 #input is a two-dim array [num_rows*num_cols][nr_bands]
 def PolarCoordinates(input):
+    """
+    Convert input data to polar coordinates.
+
+    Parameters:
+    -----------
+    input : array-like
+        A two-dimensional array with shape [num_rows*num_cols][nr_bands].
+
+    Returns:
+    --------
+    array-like
+        The input data converted to polar coordinates.
+    """
     pixel_depth = 1
     nr_bands = input.shape[1]
     datasetPow2 = tf.math.pow(input,2)
