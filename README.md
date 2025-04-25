@@ -4,6 +4,8 @@
 
 This project implements a hybrid approach using Generative Adversarial Networks (GANs) and Spectral Angular Distance for cloud removal in images. The goal is to enhance image quality by effectively removing cloud cover. This code is based on the paper [Hybrid GAN and Spectral Angular Distances for cloud removal](https://ieeexplore.ieee.org/abstract/document/9554891) by Omid Ghozatlou and Mihai Datcu.
 
+## Diagram
+```
 flowchart TD
     %% Data Storage
     subgraph "Data Storage"
@@ -84,8 +86,7 @@ flowchart TD
     classDef training fill:#ffcdd2,stroke:#e53935,color:#b71c1c;
     classDef inference fill:#ffe0b2,stroke:#fb8c00,color:#e65100;
     classDef external fill:#f5f5f5,stroke:#9e9e9e,color:#616161,stroke-dasharray: 5 5;
-
-
+```
 ## Features
 
 - Hybrid GAN architecture for cloud removal
