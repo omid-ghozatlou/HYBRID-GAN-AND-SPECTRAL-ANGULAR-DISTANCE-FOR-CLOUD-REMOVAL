@@ -85,6 +85,7 @@ flowchart TD
     classDef inference fill:#ffe0b2,stroke:#fb8c00,color:#e65100;
     classDef external fill:#f5f5f5,stroke:#9e9e9e,color:#616161,stroke-dasharray: 5 5;
 
+
 ## Features
 
 - Hybrid GAN architecture for cloud removal
